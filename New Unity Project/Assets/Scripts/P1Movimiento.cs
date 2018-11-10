@@ -17,4 +17,5 @@ public class P1Movimiento : MonoBehaviour {
         if (Input.GetKey(KeyCode.D)) this.transform.Translate(Vector3.right * 4f * Time.deltaTime);
 
     }
+   
 }
