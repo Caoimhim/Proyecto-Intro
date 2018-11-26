@@ -96,19 +96,11 @@ public class Player : MonoBehaviour
         {
             DropBomb();
         }
-
-     
-
     }
+
     private void DropBomb ()
     {
-        Instantiate(bombPrefab, playerTransform.position, bombPrefab.transform.rotation);
+        //Instantiate(bombPrefab, playerTransform.position, bombPrefab.transform.rotation);
+        Instantiate(bombPrefab, new Vector3(Mathf.RoundToInt(playerTransform.position.x), bombPrefab.transform.position.y, Mathf.RoundToInt(playerTransform.position.z)), bombPrefab.transform.rotation);
     }
-
-
-
 }
-
-
-
-

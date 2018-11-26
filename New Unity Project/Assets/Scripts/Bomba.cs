@@ -1,33 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Bomba : MonoBehaviour {
+    public GameObject explosionPrefab;
+    public LayerMask levelMask;
+	// Use this for initialization
+	void Start () {
+        Invoke("Explode", 3f);
+     
 
+
+		
+	}
 	
-    public Transform Spawnpoint;
-    public GameObject Prefab;
-    private float nextActionTime = 0.0f;
-    public float interpolationPeriod = .1f;
+	// Update is called once per frame
+	void Update () {
+	}
 
-    void OnTriggerEnter(){
-        if (Input.GetKey(KeyCode.Y))
-        {
-            Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation); 
-        }
-    }
-
-    void Update()
+    void Explode()
     {
-        
-        if (Time.time > nextActionTime )
-        {
-            nextActionTime = Time.time + interpolationPeriod;
-            OnTriggerEnter();
-        }
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 
-        
+
+        GetComponent<MeshRenderer>().enabled = false;
+        transform.Find("Collider").gameObject.SetActive(false);
+        Destroy(gameObject, .3f);
+
     }
-    // Update is called once per frame
-
+  
 }
