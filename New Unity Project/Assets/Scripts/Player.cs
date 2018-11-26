@@ -66,7 +66,10 @@ public class Player : MonoBehaviour
         {
             this.transform.Translate(Vector3.right * 4f * Time.deltaTime);
         }
-        //Add drop bomb here
+        if (Input.GetKeyDown (KeyCode.Space))
+        {
+            DropBomb();
+        }
 
     }
 
@@ -89,8 +92,17 @@ public class Player : MonoBehaviour
         {
             this.transform.Translate(Vector3.right * 4f * Time.deltaTime);
         }
-        //Add drop bomb here as well
+        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            DropBomb();
+        }
 
+     
+
+    }
+    private void DropBomb ()
+    {
+        Instantiate(bombPrefab, playerTransform.position, bombPrefab.transform.rotation);
     }
 
 
