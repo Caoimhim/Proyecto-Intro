@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     //Setting player number
     public int iPNumber = 1;
     //inventory
-    private int iBombs = 1;
+    public int iBombs = 2;
 
     //delcare the bomb boject
     public GameObject bombPrefab;
@@ -68,7 +68,11 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKeyDown (KeyCode.Space))
         {
-            DropBomb();
+		if (iBombs > 0)
+		{ 
+            		DropBomb();
+	    		iBombs--;
+		}
         }
 
     }
@@ -92,15 +96,21 @@ public class Player : MonoBehaviour
         {
             this.transform.Translate(Vector3.right * 4f * Time.deltaTime);
         }
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Input.GetKeyDown(KeyCode.RightAlt))
         {
-            DropBomb();
+		if (iBombs > 0)
+		{ 
+            		DropBomb();
+	    		iBombs--;
+		}
         }
     }
 
     private void DropBomb ()
     {
+	    
         //Instantiate(bombPrefab, playerTransform.position, bombPrefab.transform.rotation);
         Instantiate(bombPrefab, new Vector3(Mathf.RoundToInt(playerTransform.position.x), bombPrefab.transform.position.y, Mathf.RoundToInt(playerTransform.position.z)), bombPrefab.transform.rotation);
     }
+
 }

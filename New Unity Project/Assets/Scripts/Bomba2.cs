@@ -2,17 +2,17 @@
 using UnityEngine;
 using System;
 
-public class Bomba : MonoBehaviour {
+public class Bomba2 : MonoBehaviour {
     public GameObject explosionPrefab;
     public LayerMask levelMask;
     public bool exploded = false;
     GameObject referenceObject;
     Player referenceScript;
-    public GameObject destroyBlock;
+    public GameObject destroyBlocks;
     // Use this for initialization
     void Start() {
         Invoke("Explode", 3f);
-	referenceObject = GameObject.FindGameObjectWithTag("Player1");
+	referenceObject = GameObject.FindGameObjectWithTag("Player2");
 	referenceScript = referenceObject.GetComponent<Player>();
 
     }
@@ -57,7 +57,7 @@ public class Bomba : MonoBehaviour {
 		    { 
 			    Destroy( hit.collider.gameObject);
 			    Debug.Log("Hit destroyable");
-			    Instantiate(destroyBlock, transform.position + ( i * direction), destroyBlock.transform.rotation );
+			    Instantiate(destroyBlocks, transform.position + ( i * direction), destroyBlocks.transform.rotation);
 			    break;
 		    }
 		    else

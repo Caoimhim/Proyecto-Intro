@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -125,9 +125,9 @@ GameObject:
   - component: {fileID: 6384866}
   - component: {fileID: 6384865}
   - component: {fileID: 6384864}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (21)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,9 +226,9 @@ GameObject:
   - component: {fileID: 43342957}
   - component: {fileID: 43342956}
   - component: {fileID: 43342955}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (8)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -327,9 +327,9 @@ GameObject:
   - component: {fileID: 45966381}
   - component: {fileID: 45966380}
   - component: {fileID: 45966379}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (7)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -529,9 +529,9 @@ GameObject:
   - component: {fileID: 122887496}
   - component: {fileID: 122887495}
   - component: {fileID: 122887494}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (29)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -933,9 +933,9 @@ GameObject:
   - component: {fileID: 241467444}
   - component: {fileID: 241467443}
   - component: {fileID: 241467442}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (24)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1212,9 +1212,9 @@ GameObject:
   - component: {fileID: 325456188}
   - component: {fileID: 325456187}
   - component: {fileID: 325456186}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (22)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1313,9 +1313,9 @@ GameObject:
   - component: {fileID: 345814666}
   - component: {fileID: 345814665}
   - component: {fileID: 345814664}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (16)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1402,6 +1402,130 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 345814662}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &393076418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 393076420}
+  - component: {fileID: 393076419}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &393076419
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 393076418}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ddc4371497b524317847d802aed9814e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &393076420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 393076418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &400989507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,9 +1681,9 @@ GameObject:
   - component: {fileID: 480717656}
   - component: {fileID: 480717655}
   - component: {fileID: 480717654}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (27)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1690,9 +1814,9 @@ GameObject:
   - component: {fileID: 515270169}
   - component: {fileID: 515270168}
   - component: {fileID: 515270167}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (3)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1791,9 +1915,9 @@ GameObject:
   - component: {fileID: 545016072}
   - component: {fileID: 545016071}
   - component: {fileID: 545016070}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (33)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2094,9 +2218,9 @@ GameObject:
   - component: {fileID: 609823547}
   - component: {fileID: 609823546}
   - component: {fileID: 609823545}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (36)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2427,9 +2551,9 @@ GameObject:
   - component: {fileID: 707664358}
   - component: {fileID: 707664357}
   - component: {fileID: 707664356}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (20)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2629,9 +2753,9 @@ GameObject:
   - component: {fileID: 733804327}
   - component: {fileID: 733804326}
   - component: {fileID: 733804325}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (23)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2731,7 +2855,7 @@ GameObject:
   - component: {fileID: 757517031}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2763,7 +2887,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iPNumber: 2
-  bombPrefab: {fileID: 1826934789812412, guid: 8a4be47e5a3043d48a3bb0afe19c7996, type: 2}
+  iBombs: 2
+  bombPrefab: {fileID: 1826934789812412, guid: 1499865a8f7fd4339b3407f28a05e310, type: 2}
 --- !u!4 &757517030
 Transform:
   m_ObjectHideFlags: 0
@@ -2784,7 +2909,7 @@ CapsuleCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 757517027}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: d45e81a4d127e47f7ac358180751705b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.18093522
@@ -2803,9 +2928,9 @@ GameObject:
   - component: {fileID: 821843697}
   - component: {fileID: 821843696}
   - component: {fileID: 821843695}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (6)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2904,9 +3029,9 @@ GameObject:
   - component: {fileID: 952802533}
   - component: {fileID: 952802532}
   - component: {fileID: 952802531}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (39)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3138,9 +3263,9 @@ GameObject:
   - component: {fileID: 960212855}
   - component: {fileID: 960212854}
   - component: {fileID: 960212853}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (12)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3340,9 +3465,9 @@ GameObject:
   - component: {fileID: 1076363270}
   - component: {fileID: 1076363269}
   - component: {fileID: 1076363268}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (11)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3441,9 +3566,9 @@ GameObject:
   - component: {fileID: 1093875470}
   - component: {fileID: 1093875469}
   - component: {fileID: 1093875468}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (31)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3542,9 +3667,9 @@ GameObject:
   - component: {fileID: 1124709630}
   - component: {fileID: 1124709629}
   - component: {fileID: 1124709628}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (38)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3643,9 +3768,9 @@ GameObject:
   - component: {fileID: 1148506043}
   - component: {fileID: 1148506042}
   - component: {fileID: 1148506041}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (28)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3744,9 +3869,9 @@ GameObject:
   - component: {fileID: 1160071313}
   - component: {fileID: 1160071312}
   - component: {fileID: 1160071311}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (30)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3845,9 +3970,9 @@ GameObject:
   - component: {fileID: 1160500322}
   - component: {fileID: 1160500321}
   - component: {fileID: 1160500320}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (18)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3942,7 +4067,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1165817150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4029,9 +4154,9 @@ GameObject:
   - component: {fileID: 1178096984}
   - component: {fileID: 1178096983}
   - component: {fileID: 1178096982}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (34)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4130,9 +4255,9 @@ GameObject:
   - component: {fileID: 1209566925}
   - component: {fileID: 1209566924}
   - component: {fileID: 1209566923}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (35)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4231,9 +4356,9 @@ GameObject:
   - component: {fileID: 1286537236}
   - component: {fileID: 1286537235}
   - component: {fileID: 1286537234}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (2)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4332,9 +4457,9 @@ GameObject:
   - component: {fileID: 1293012659}
   - component: {fileID: 1293012658}
   - component: {fileID: 1293012657}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (32)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4433,9 +4558,9 @@ GameObject:
   - component: {fileID: 1293016772}
   - component: {fileID: 1293016771}
   - component: {fileID: 1293016770}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (15)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4666,9 +4791,9 @@ GameObject:
   - component: {fileID: 1319585725}
   - component: {fileID: 1319585724}
   - component: {fileID: 1319585723}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (17)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4869,7 +4994,7 @@ GameObject:
   - component: {fileID: 1413458030}
   m_Layer: 0
   m_Name: Player1
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4880,7 +5005,7 @@ CapsuleCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1413458029}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: d45e81a4d127e47f7ac358180751705b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.11418852
@@ -4914,6 +5039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iPNumber: 1
+  iBombs: 2
   bombPrefab: {fileID: 1826934789812412, guid: 8a4be47e5a3043d48a3bb0afe19c7996, type: 2}
 --- !u!4 &1413458033
 Transform:
@@ -4941,9 +5067,9 @@ GameObject:
   - component: {fileID: 1451457052}
   - component: {fileID: 1451457051}
   - component: {fileID: 1451457050}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (14)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5072,9 +5198,9 @@ GameObject:
   - component: {fileID: 1595777402}
   - component: {fileID: 1595777401}
   - component: {fileID: 1595777400}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (5)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5274,9 +5400,9 @@ GameObject:
   - component: {fileID: 1714501615}
   - component: {fileID: 1714501614}
   - component: {fileID: 1714501613}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (9)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5577,9 +5703,9 @@ GameObject:
   - component: {fileID: 1726473839}
   - component: {fileID: 1726473838}
   - component: {fileID: 1726473837}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (19)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5779,9 +5905,9 @@ GameObject:
   - component: {fileID: 1768879885}
   - component: {fileID: 1768879884}
   - component: {fileID: 1768879883}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (13)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6010,9 +6136,9 @@ GameObject:
   - component: {fileID: 1821369189}
   - component: {fileID: 1821369188}
   - component: {fileID: 1821369187}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (25)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6124,13 +6250,13 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -6243,9 +6369,9 @@ GameObject:
   - component: {fileID: 1940482417}
   - component: {fileID: 1940482416}
   - component: {fileID: 1940482415}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (26)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6344,9 +6470,9 @@ GameObject:
   - component: {fileID: 2009323756}
   - component: {fileID: 2009323755}
   - component: {fileID: 2009323754}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (4)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6445,9 +6571,9 @@ GameObject:
   - component: {fileID: 2021216598}
   - component: {fileID: 2021216597}
   - component: {fileID: 2021216596}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (10)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6546,9 +6672,9 @@ GameObject:
   - component: {fileID: 2069085733}
   - component: {fileID: 2069085732}
   - component: {fileID: 2069085731}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (37)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6860,9 +6986,9 @@ GameObject:
   - component: {fileID: 2123046630}
   - component: {fileID: 2123046629}
   - component: {fileID: 2123046628}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pared Destructible (1)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
